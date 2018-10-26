@@ -1,0 +1,185 @@
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    /* background: #2D3142; */
+    transition: 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    /* flex-direction: column; */
+}
+.header {
+    background: #ffffff;
+    border-style: solid;
+    border-color: #2D3142;
+    border-width: 5px 0 10px 0;
+    text-align: center;
+    transition: 0.5s;
+}
+.menu {
+    background: #ffffff;
+    border-style: solid;
+    border-color: #2D3142;
+    border-width: 5px 0 10px 0;
+    transition: 0.5s;
+}
+.sidebar {
+    background: #2D3142;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+/* .konten-wrapper {
+    border-style: solid;
+    border-color: #2D3142;
+    border-width: 0 10px 0 0;
+} */
+.konten-wrapper {
+    transition: 0.5s;
+}
+.konten {
+    background: #ffffff;
+    background-color: #f7f7f7;
+    /* background: url(images/inixindo.png) bottom right no-repeat; */
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.40);
+    padding: 3px 13px;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 10px;
+    height: 25%;
+    transition: 0.5s;
+}
+.footer {
+    background: #2D3142;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.round-image {
+    border-color: #ffffff;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    height: 40px;
+}
+.logo2 {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.for-image {
+    padding-top: 50px;
+}
+
+.sidebar h3, p {
+    text-align: center;
+    color: white;
+}
+
+.prolog {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.header,.menu, .sidebar, .konten-wrapper, .footer {
+    width: 100%;
+}
+.header, .menu {
+    height: 70px;
+}
+
+</style>
+
+<style>
+@media screen and (min-width: 600px) and (max-width: 999px){
+    .sidebar, .header {
+        width: 40%;
+    }
+    .konten-wrapper, .menu {
+        width: 60%;
+    }
+    .footer {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .sidebar, .header {
+        width: 25%;
+    }
+    .konten-wrapper, .menu {
+        width: 75%;
+    }
+    .footer {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* .sidebar, .konten-wrapper {
+        min-height: 500px;
+    } */
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class='menu'><img src="https://learn-mws.firebaseapp.com/images/mws.png"></div> -->
+        <div class='header'><img src="images/mws.png" class="logo"></div>
+        <div class="menu"></div>
+        <div class='sidebar'>
+            <div class="for-image">
+                <img src="images/photo.jpg" alt="Mae" class="round-image">
+            </div>
+            <div class="prolog">
+                <h3>Maestro Trastanechora</h3>
+                <p>Interested in graphic design and coding, focused on Front-end web development technologies. Willing to work cooperatively and collaboratively with others, a person that is committed to ongoing learning and self-improvement.</p>
+                <br>
+                <p>Mobile Web Specialist <br> Google Developer Kejar Batch 1 <br> Yogyakarta</p>
+            </div>
+            <div>
+
+                <br>
+                <p>Supported by:</p><br>
+                <img src="images/inixindo.png" class="logo2">
+
+            </div>
+        </div>
+        <!-- <div class='konten'>Project 1: <br> <a href="https://learn-mws.firebaseapp.com/project1/add2numbers.html">Menjumlahkan dua angka</a></div> -->
+        <div class="konten-wrapper">
+        <div class='konten'>Tugas 1 <br> Project 1: <a href="project1/add2numbers.html">Menjumlahkan dua angka</a></div>
+        <div class='konten'>Tugas 2 <br> CSS Grid</div>
+        <div class='konten'>Tugas 3 <br> Project 2: <a href="project2/peta.html">Lokasi Istimewa dengan Mapbox</a></div>
+        <div class="konten">Tugas 4: <br> Offline web application - IndexedDB and Caching</div>
+        </div>
+        <div class='footer'>© trastanechora - 2018</div>
+    </div>
+</body>
+</html>
